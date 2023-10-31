@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SocialMedia from './SocialMedia'
 
 type Props = {}
 
@@ -8,7 +9,7 @@ const Navbar = (props: Props) => {
   return (
     <header className='mb-5'>
         <nav className='flex justify-between items-center w-full text-wh-50 px-10 py-4 bg-wh-900'>
-          <div className='hidden sm:block'> Social media </div> {/* Only appear in screens above small */}
+          <div className='hidden sm:block'> <SocialMedia /> </div> {/* Only appear in screens above small */}
             
             <div className='flex justify-between items-center gap-4 sm:gap-10'>
               <Link href="/"> Home </Link>
@@ -27,7 +28,7 @@ const Navbar = (props: Props) => {
             <div className='flex justify-between gap-8 mt-5 mb-4 mx-10'>
               <div className='basis-2/3 md:mt-3'>
                 <h1 className='font-bold text-3xl md:text-5xl'>BLOG OF THE FUTURE</h1>
-                <h4 className=' mt-3'>Read the blog that uses AI</h4>
+                <h3 className=' mt-3'>Read the blog that uses AI</h3>
               </div>
 
               <div className='basis-full relative w-auto h-32 bg-wh-500'>
