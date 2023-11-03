@@ -1,15 +1,18 @@
 import React from 'react'
 
 type Props = {
-    theme:string,
+    category:string,
     description:string,
+    backgColor?:string,
+    categoryColor?:string,
+    textColor?:string
 }
 
-const TitleBox = ({theme, description}: Props) => {
+const TitleBox = ({category, description, backgColor = 'bg-accent-orange', categoryColor = 'wh-900', textColor = 'text-wh-100'}: Props) => {
   return (
     <div className='flex items-center gap-4'>
-        <h1 className='p-2 font-bold bg-wh-900 text-wh-10'>{theme}</h1>
-        <p>{description}</p>
+        <h1 className={`py-2 px-6 font-bold ${backgColor} ${categoryColor}`}>{category}</h1>
+        <p className={`${textColor}`}>{description}</p>
     </div>
   )
 }
