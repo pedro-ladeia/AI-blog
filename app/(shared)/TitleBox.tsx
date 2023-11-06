@@ -12,7 +12,7 @@ const TitleBox = ({category, description, backgColor = 'bg-accent-orange', categ
   return (
     <div className='flex items-center gap-4'>
         <h1 className={`py-2 px-6 font-bold ${backgColor} ${categoryColor}`}>{category}</h1>
-        <p className={`${textColor}`}>{description}</p>
+        <p className={`${textColor} text-xl font-bold`}>{description}</p>
     </div>
   )
 }
