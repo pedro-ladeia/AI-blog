@@ -1,22 +1,6 @@
 import React from 'react'
 import TitleBox from '../(shared)/TitleBox'
-
-type TechCardProps = { 
-    title: string,
-    description: string,
-    image: string,
-    author: string,
-    date: string
-}
-
-
-/*const TechCard = ({title, description, image, author, date}: TechCardProps) => {
-    return(
-        <div className=''>
-
-        </div>
-    )
-}*/
+import Card from '../(shared)/Card'
 
 
 type Props = {}
