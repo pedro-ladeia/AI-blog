@@ -3,7 +3,7 @@ import React from 'react'
 
 type Props = {
     className?: string;
-    imageHeight?: number;
+    imageHeight?: string;
     isSmall?: boolean;
     isLongForm?: boolean;
 
