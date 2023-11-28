@@ -17,10 +17,33 @@ const Tech = (props: Props) => {
             />
         </div>
         <div className='sm:grid grid-cols-2 grid-rows-3 gap-8 my-5 h-96'>
-            <div className='col-span-1 row-span-3 bg-wh-300'></div>
-            <div className='col-span-1 row-span-1 bg-wh-300'></div>
-            <div className='col-span-1 row-span-1 bg-wh-300'></div>
-            <div className='col-span-1 row-span-1 bg-wh-300'></div>
+            <Card
+              className='bg-wh-500 col-span-1 row-span-3'
+              imageHeight='h-96'
+              isLongForm
+
+            />
+            {/* SMALL CARDS */}
+            <Card
+              className='bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3'
+              imageHeight='h-48'
+              isSmall
+
+            />
+
+            <Card
+              className='bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3'
+              imageHeight='h-48'
+              isSmall
+
+            />
+
+            <Card
+              className='bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3'
+              imageHeight='h-48'
+              isSmall
+
+            />
         </div>
     </section>
   )
