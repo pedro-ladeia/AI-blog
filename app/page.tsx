@@ -2,6 +2,7 @@ import Tech from "./(home)/Tech";
 import Travel from "./(home)/Travel";
 import Trending from "./(home)/Trending";
 import Other from "./(shared)/Other";
+import Subscribe from "./(shared)/Subscribe";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
           <Other />
           
           <div className="hidden md:block">
-            {/*<Subscribe />*/}
+            <Subscribe />
           </div>
         
         </div>
