@@ -6,7 +6,7 @@ type Props = {}
 
 const Other = (props: Props) => {
   return (
-    <section>
+    <section className='mb-14'>
         <hr className='border-1 mb-8' />
         <TitleBox category='PLUS' description='OTHER TRENDING POSTS' textColor='text-wh-900'/>
         <div className='sm:grid grid-cols-2 gap-16 mt-5'>
