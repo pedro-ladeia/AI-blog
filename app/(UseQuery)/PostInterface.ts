@@ -3,7 +3,7 @@ import { UUID } from "crypto"
 export type PostInterface = {
     id:UUID,
     createdAt:Date,
-    updateAt:Date,
+    updatedAt:Date,
     title:string,
     category:string,
     content:string,
