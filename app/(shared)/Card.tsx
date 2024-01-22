@@ -1,14 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
+import { PostInterface } from '../(useQuery)/PostInterface'
 
 type Props = {
   className?: string,
   imageHeight: string,
   isSmall?: boolean,
-  isLongText?: boolean
+  isLongText?: boolean,
+  post:PostInterface
 }
 
-const Card = ({className, imageHeight, isSmall = false, isLongText = false}:Props) => {
+const Card = ({className, imageHeight, isSmall = false, isLongText = false, post}:Props) => {
   return(
     <div className={className}>
       <Link className='basis-full hover:opacity-70' href= '/'>
@@ -22,11 +24,11 @@ const Card = ({className, imageHeight, isSmall = false, isLongText = false}:Prop
           `}>Title</h5>
         </Link>
         <div className={`${isSmall? 'my-2' : 'flex my-3'}`}>
-          <h5 className='font-semibold text-xs'>Author</h5>
-          <h6 className='text-wh-300 text-xs'>Date</h6>
+          <h5 className='font-semibold text-xs'>{post?.author ?? "Author"}</h5>
+          <h6 className='text-wh-300 text-xs'>{post?.updatedAt ??"Date"}</h6>
         </div>
         <p className={`text-wh-300 ${isLongText? 'line-clamp-5' : 'line-clamp-3'}`}>
-          Snippet
+          {post?.snippet ?? "Snippet"}
         </p>
       </div>
     </div>
