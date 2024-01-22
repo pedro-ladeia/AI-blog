@@ -5,7 +5,7 @@ export type PostInterface = {
     createdAt:Date,
     updateAt:Date,
     title:string,
-    categpry:string,
+    category:string,
     content:string,
     author:string,
     image:string,
